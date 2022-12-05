@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./jquery.js"></script>
+    <title>du thuyen</title>
+</head>
+
+<body>
+    <div id="logo">
+        <a class="navbar-brand" href="#"><img src="/image/yatch (2).png" alt="" style="height: 80px; width: 80px;"></a>
+        <div class="seach">
+            <div class="aa"><a href=""><img src="/icon/magnifying-glass.png" alt=""></a></div>
+            <input type="text" placeholder="Search..." id="filter-search">
+        </div>
+        <div class="icon">
+            <a href=""><img src="/icon/facebook-app-symbol.png" alt=""></a>
+            <a href=""><img src="/icon/icons8-instagram-30.png" alt=""></a>
+            <a href=""><img src="/icon/icons8-gmail-logo-50.png" alt=""></a>
+        </div>
+    </div>
+    <div class="home">
+        <div class="menu">
+            <div>
+                <li><a href="/index.html">Home</a></li>
+            </div>
+            <div>
+                <li class="dropdown"><a href="" class="dropbtn">Boat</a>
+
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="/boat/Scarlet Pearl/index.html">Scarlet Pearl</a>
+                        <a href="/boat/Spectre/index.html">Spectre</a>
+                        <a href="/boat/PlanetSolar/index.html">PlanetSolar</a>
+                        <a href="/boat/Majesty 155/index.html">Majesty 155 </a>
+                        <a href="/boat/Galaxy of Happiness/index.html">Galaxy of Happiness</a>
+                        <a href="/boat/ModCat Project L3/index.html">ModCat Project L3</a>
+                        <a href="/boat/Mars/index.html">Mars </a>
+                        <a href="/boat/Shaddai/index.html">Shaddai</a>
+                        <a href="/boat/L'amage/index.html">L'amage </a>
+                    </div>
+                </li>
+            </div>
+            <div>
+                <li class="dropdown"><a href="" class="dropbtn">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="/hopdong/muaban/index.html">Boat buying</a>
+                        <a href="/hopdong/thanhtoan/index.html">Insurance</a>
+                    </div>
+                </li>
+            </div>
+            <div>
+                <li><a href="/lienhe/index.html">Contract</a></li>
+            </div>
+            <div>
+                <li><a href="">Exhibition</a></li>
+            </div>
+            <div>
+                <li><a href="">Eng</a></li>
+            </div>
+        </div>
+        <div class="login">
+            <div>
+                <div class="login-but">
+                    <button onclick="document.getElementById('id02').style.display='block'" style="width:90px;">Sign
+                        Up</button>
+                </div>
+
+                <div id="id02" class="modal">
+                    <form class="modal-content" action="/action_page.php">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                        <div class="container">
+                            <h1>Sign Up</h1>
+                            <hr>
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+
+                            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                                    Privacy</a>.</p>
+
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                                    class="cancelbtn">Cancel</button>
+                                <div>
+                                    <button type="submit" class="signupbtn">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="login-but">
+                    <button onclick="document.getElementById('id01').style.display='block'"
+                        style="width:auto;">Login</button>
+                </div>
+                <div id="id01" class="modal">
+
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                title="Close Modal" style="top: -23px;">&times;</span>
+                            <img src="/image/yatch (2).png" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <div class="login-but">
+                                <button type="submit">Login</button>
+                            </div>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleControls">
+        <div class="carousel-item active">
+            <img src="/image/t1.jpg" class="d-block w-100" alt="..." id="banner">
+        </div>
+    </div>
+
+    <div class="boat-view">
+        <h1>Majesty</h1>
+        <p>Majesty 155 (47 m): More than a yacht with a unique design, Majesty 155 also received the CEDIA award for the best installation and integration of smart home technology on board.
+             Majesty's lighting, navigation and sound systems can be controlled via the onboard display as well as the iPad.
+             Super yacht also owns 2,011 horsepower dual engines.</p>
+    </div>
+
+    <div class="furniture">
+        <section>
+            <article>
+                <figure>
+                    <img src="images/Diem_danh_16_sieu_du_thuyen_xa_hoa_nhat_hanh_tinh_3.jpg" alt="">
+                    <div class="ct">
+                        <img src="images/02.jpg" alt="">
+                        <img src="images/03.jpg" alt="">
+                    </div>
+                    <p>The vessel can accommodate 12 guests in a total of six lavish guest rooms (pictured). There are nine more bedrooms to sleep 14 crew members
+                        Outside there is a bar, another dining area, a swimming pool and sunbathing area.
+                        One of the bedrooms has a glass partition behind the headboard, with one side marbled on the other.
+                        
+                        There are nine additional bedrooms to sleep 14 crew members.
+                        
+                        The yacht's lavish master suite includes a private outdoor hot tub and ample deck space.
+                        
+                        There's also a decadent indoor dining room, a tavern with a grand piano, a gym and a dedicated spa area.
+                        
+                        Downstairs is a garage that can accommodate a tender more than 9 meters long, a 7.5 meter support vessel and two jet skis.
+                        The yacht can reach 21.2 knots and has a range of 6,500 knots when powered at 12 knots. km/h)</p>
+                    <img src="images/16245994-7264399-One_of_the_bedrooms_features_a_glass_divider_behind_the_bedhead_-a-23_1563555369916.jpg" alt="">
+                    <div class="ct">
+                        <img src="images/16246054-7264399-Above_one_of_the_guest_rooms_complete_with_chunky_glass_bedside_-a-17_1563555369912.jpg" alt="">
+                        <img src="images/16246104-7264399-An_aerial_view_of_the_yacht_s_main_outside_deck_complete_with_so-a-18_1563555369913.jpg" alt="">
+                    </div>
+                    <p>The yacht's interior, developed by Cristiano Gatto Design, includes a private cabin for the owner, a VIP cabin on the lower deck and a playroom for children.
+                     Other amenities include a Jacuzzi and a mixed-use beach club that converts flexibly into a pod.</p>
+                </figure>
+            </article>
+        </section>
+        <div class="specifications">
+            <h1>Actual Specifications</h1>
+            <p>Need to know</p>
+            <div class="download sa">
+                <button type="submit">
+                    <img src="/icon/telephone-call.png" alt=""> Contact broker</button>
+            </div>
+            <div class="download">
+                <button type="submit"><img src="/icon/file.png" alt=""> Download</button>
+                <button type="submit"><img src="/icon/compare.png" alt=""> Compare</button>
+                <button type="submit"><img src="/icon/bank.png" alt=""> Save</button>
+            </div>
+            <div class="buying">
+                <h6>Asking price</h6>
+                <h3>24.000.000 EUR</h3>
+            </div>
+            <div class="buying">
+                <h6>Built</h6>
+                <h3>2019  Umm AI Quwain.</h3>
+            </div>
+            <div class="buying">
+                <h6>Length</h6>
+                <h3>47m</h3>
+            </div>
+            <div class="buying">
+                <h6>Guests</h6>
+                <h3>60 in 26 cabin</h3>
+            </div>
+            <div class="buying">
+                <h6>Bathroom</h6>
+                <h3>Spacious bathroom, with standing shower, jacuzzi.</h3>
+            </div>
+            <div class="buying">
+                <img src="images/Hai-3.jpg" alt="" class="dd">
+            </div>
+        </div>
+    </div>
+
+    <div class="Actual">
+        <h1>Clear detailed actual specifications</h1>
+        <div class="Actual-buy">
+            <div class="basa">
+                <div class="bamboo">
+                    <h5>Asking price</h5>
+                    <h2>24.000.000 EUR</h2>
+                </div>
+                <div class="bamboo">
+                    <h5>Length</h5>
+                    <h2>47m</h2>
+                </div>
+            </div>
+            <div class="basa">
+                <div class="bamboo">
+                    <h5>Guests</h5>
+                    <h2>60 in 26 cabin</h2>
+                </div>
+                <div class="bamboo">
+                    <h5>Built</h5>
+                    <h2>2019 Umm AI Quwain.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="asan">
+            <div class="asan-sa">
+                <div class="totoo">
+                    <h6>Maximum speed</h6>
+                    <h4>16 knots</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Range</h6>
+                    <h4>4200 nm</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Flag</h6>
+                    <h4>America</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Lying</h6>
+                    <h4>Umm AI Quwain.</h4>
+                </div>
+            </div>
+            <div class="asan-sa">
+                <div class="totoo">
+                    <h6>Beam</h6>
+                    <h4>8.2m (26.3ft)</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Draft</h6>
+                    <h4>2.6m (8.4ft)/h4>
+                </div>
+                <div class="totoo">
+                    <h6>Gross Tonnage</h6>
+                    <h4>340</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Cruising speed</h6>
+                    <h4>16 knots</h4>
+                </div>
+            </div>
+            <div class="asan-sa">
+                <div class="bamboo">
+                    <h6>Class</h6>
+                    <h4>ABS + A1 Yachting Service AMS</h4>
+                </div>
+                <div class="bamboo">
+                    <h6>Construction</h6>
+                    <h4>Hull - GRP, Superstructure - GRP,Deck - Teak</h4>
+                </div>
+            </div>
+            <div class="asan-sa">
+                <div class="totoo">
+                    <h6>Exterior Designer</h6>
+                    <h4> Mohammed Hussein Alshaali</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Interior Designer</h6>
+                    <h4>American businessman John Staluppi</h4>
+                </div>
+            </div>
+            <div class="asan-sa">
+                <div class="totoo">
+                    <h6>Engines</h6>
+                    <h4>2 ×  1,930hp MTU</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Propulsion</h6>
+                    <h4>run on 1,930hp . twin engines</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Guests</h6>
+                    <h4>60 in 26 cabin</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Jacuzzi</h6>
+                    <h4>2 Jacuzzis </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="contacts">
+        <div class="contacts-form">
+            <h1> You want to learn about yachts?</h1>
+            <div class="cus">
+                <div class="contacts-cus">
+                    <p>Contact us for more information</p>
+                    <a href="">Contact</a>
+                </div>
+                <div class="contacts-cus">
+                    <p>Several exhibitions will help you see your favorite yacht model</p>
+                    <a href="">Go to the exhibition</a>
+                </div>
+            </div>
+            <div class="contacts-icon">
+                <a href=""><img src="/icon/instar.png" alt=""></a>
+                <a href=""><img src="/icon/zalo.png" alt=""></a>
+                <a href=""><img src="/icon/messenger.png" alt=""></a>
+                <a href=""><img src="/icon/goi.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="contact">
+        <div class="ss1">
+            <div class="logo-img">
+                <img src="/image/yatch (2).png" alt="" class="one">
+            </div>
+            <div class="contact-icon">
+                <div class="phones"><img src="/icon/phone-call.png" alt=""><a href="">12345678</a></div>
+                <div class="phones"><img src="/icon/gmail.png" alt=""><a href="">fpt@gmail.com</a></div>
+                <div class="phones"><img src="/icon/pin.png" alt=""><a href="https://goo.gl/maps/f5Dzb36TpL7KS5Qe7">số
+                        8 Tôn Thất Thuyết-Mỹ Đình-Hà Nội</a>
+                </div>
+            </div>
+            <div class="icon-call">
+                <div class="ss2">
+                    <h2> Attention</h2>
+                    <div>
+                        <div><a href="">Terms of use</a></div>
+                        <div><a href="">Privacy policy</a></div>
+                        <div><a href="">Careers</a></div>
+                        <div><a href=""> Sitemap</a></div>
+                    </div>
+                </div>
+                <div class="ss2">
+                    <h2>Information</h2>
+                    <div>
+                        <div><a href="">Boat contract</a></div>
+                        <div><a href="">Insurance</a></div>
+                        <div><a href="">Buying broker</a></div>
+                        <diV><a href="">Exhibition</a></diV>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
